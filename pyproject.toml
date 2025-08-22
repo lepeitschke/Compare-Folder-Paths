@@ -1,7 +1,7 @@
 [project]
 name = "compare-folder-paths"
 version = "0.1.0"
-description = "Add your description here"
+description = "I want to compare the absolute paths of two folders and see what files are missing"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = "">=3.13,<3.14""
 dependencies = []
