@@ -24,9 +24,9 @@ def compare_folders(folder1, folder2, output_file="comparison.xlsx"):
     paths1 = get_all_paths(folder1)
     paths2 = get_all_paths(folder2)
 
-    stripped1 = strip_paths(paths1, "F:\\Root\\Restore-E\\")
+    stripped1 = strip_paths(paths1, "F:\\Root\\Backup Macrium\\")
     stripped2 = strip_paths(
-        paths2, "\\\\NAS-STUDIO\\Recovered Files 12TB HDD\\Restore-E\\"
+        paths2, "\\\\NAS-STUDIO\\Recovered Files 12TB HDD\\Backup Macrium\\"
     )
 
     # Common files (exact same full path strings)
@@ -55,7 +55,7 @@ def compare_folders(folder1, folder2, output_file="comparison.xlsx"):
 
 
 # Example usage
-folder_a = r"F:\Root\Restore-E"
-folder_b = r"\\NAS-STUDIO\Recovered Files 12TB HDD\Restore-E"
+folder_a = r"F:\\Root\\Backup Macrium"
+folder_b = r"\\NAS-STUDIO\\Recovered Files 12TB HDD\\Backup Macrium"
 compare_folders(folder_a, folder_b, "folder_comparison.xlsx")
 print("DONE!")
